@@ -6,7 +6,7 @@ let myHighscore = document.querySelector('.highscore').textContent;
 let displayMessage = function (message) {
   document.querySelector('.message').textContent = message;
 };
-
+//end game
 function checkorino(myScore) {
   if (myScore > 0) {
     document.querySelector('.score').textContent = myScore;
@@ -16,7 +16,7 @@ function checkorino(myScore) {
     document.querySelector('.score').textContent = '0';
   }
 }
-
+//number guess
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
   console.log(guess);
@@ -45,6 +45,7 @@ document.querySelector('.check').addEventListener('click', function () {
     }
   }
 });
+//play again
 document.querySelector('.again').addEventListener('click', function () {
   myScore = 20;
   document.querySelector('.score').textContent = 20;
